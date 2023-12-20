@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Analog clock</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="pngwing.com (1).png" alt="">
+        <div class="hour"></div>
+        <div class="minute"></div>
+        <div class="second"></div>
+    </div>
+
+
+    <script>
+        setInterval(() => {
+            let d = new Date()
+            let hr = d.getHours()
+            let min = d.getMinutes()
+            let sec = d.getSeconds()
+
+            document.querySelector(".hour").style.transform = `rotate(${hr * 30 + min / 2}deg)`
+            document.querySelector(".minute").style.transform = `rotate(${min * 6}deg)`
+            document.querySelector(".second").style.transform = `rotate(${sec * 6}deg)`
+        }, 1000)
+    </script>
+
+</body>
+
+</html>

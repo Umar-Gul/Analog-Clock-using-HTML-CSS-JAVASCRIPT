@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(104, 169, 190);
+    height: 100vh;
+}
+
+.container {
+    /* background: url(pngwing.com.png); */
+    margin: auto;
+    height: 30vw;
+    width: 30vw;
+    position: relative;
+    background-size: 100%;
+
+}
+
+.hour {
+    background-color: #b43838;
+    width: 1%;
+    height: 33%;
+    position: absolute;
+    border-radius: 9px;
+    top: 27%;
+    left: 60%;
+    opacity: 0.8px;
+    transform-origin: bottom;
+    transform-origin: bottom;
+
+}
+
+.minute {
+    background-color: #080808;
+    width: 1%;
+    height: 33%;
+    position: absolute;
+    border-radius: 9px;
+    top: 27%;
+    left: 60%;
+    opacity: 0.8px;
+    transform-origin: bottom;
+}
+
+.second {
+    background-color: #0a0a0a;
+    width: 1%;
+    height: 33%;
+    position: absolute;
+    border-radius: 9px;
+    top: 27%;
+    left: 60%;
+    opacity: 0.8px;
+    transform-origin: bottom;
+
+}
